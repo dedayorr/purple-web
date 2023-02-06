@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+.top-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: rgba(175, 155, 128, 0.151);
+    padding: 2%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4%;
+    color: purple;
+}
+
+ul{
+    display:none;
+    width: 70%;
+    position: absolute;
+    top: 75px;
+    bottom: 70px;
+    padding: 5%;
+    background-color: rgba(137, 47, 125, 0.14);
+    overflow-y: auto;
+    transition: 1s;
+}
+
+li{
+    margin: 7% 0;
+    cursor: pointer;
+    list-style-type:none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.hamburger{
+    padding: 2%;
+}
+
+.show{
+    display: block;
+}
+
+.hero{
+    
+}
+
