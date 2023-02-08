@@ -15,6 +15,10 @@ body{
     justify-content: space-between;
 }
 
+.topbar{
+    /* position: sticky 0; */
+}
+
 label{
     font-size: 30px;
     font-weight: bold;
@@ -22,26 +26,30 @@ label{
     color: purple;
 }
 
-ul{
+.ul-list{
     display:none;
-    width: 70%;
+    width: 50%;
     position: absolute;
-    top: 75px;
-    bottom: 70px;
-    padding: 5%;
-    background-color: rgba(137, 47, 125, 0.14);
+    top: 84px;
+    bottom: 51px;
+    padding: 10%;
+    background-color: rgba(14, 11, 13, 0.939);
     overflow-y: auto;
     transition: 1s;
+    z-index: 10;
+    
 }
 
 li{
-    margin: 7% 0;
+    margin: 10% 0;
     cursor: pointer;
     list-style-type:none;
+    font-size: 20px;
 }
 
 li a{
     text-decoration: none;
+    color: white;
 }
 
 .hamburger{
@@ -61,7 +69,7 @@ li a{
 }
 
 .overlay{
-    background-color: rgba(128, 0, 128, 0.197);
+    background-color: rgba(128, 0, 128, 0.731);
     height: 500px;
     color: white;
 }
@@ -72,18 +80,285 @@ swiper-container {
   }
 
   swiper-slide {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font-size: 18px;
-    /* background: rgb(15, 13, 13); */
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40%;
   }
 
-  /* swiper-slide img {
-    display: block;
-    width: 100%;
+  swiper-slide > p{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .section-two{
+    background-color: rgba(128, 0, 128, 0.058);
+    padding: 5%;
+  }
+
+  .sub-section{
+    background-color: rgb(251, 247, 251);
+    padding: 4%;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .sub-section p{
+    font-weight: bold;
+  }
+
+  .about-us{
+   
+  }
+
+  .about-text{
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  .hrOne{
+    width: 30%;
+    border: solid 1px rgba(128, 0, 128, 0.683);
+
+  }
+
+  .navlist{
+    display: none;
+  }
+
+  .desktop-text{
+    display: none;
+  }
+
+  #about-us > p{
+    text-align: center;
+    margin: 0 5%;
+  }
+
+  img{
+    width: 350px;
     height: 100%;
-    object-fit: cover;
-  } */
+    margin: 0 3%;
+  }
+
+  .abt-text{
+    width: 90%;
+    margin: 0 3%;
+  }
+
+.num{
+  font-size: 30px;
+  color: purple;
+}
+
+.heading{
+  font-size: 30px;  
+}
+
+.clients{
+  text-align: center;
+  margin: 10% 3%;
+}
+
+.client-text{
+  text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+
+}
+
+.services{
+  background-color: rgba(128, 0, 128, 0.058);
+  text-align: center;
+ /* padding-bottom: 10%; */
+}
+
+.services >p{
+  margin: 0 3%;
+}
+
+.services-text{
+font-size: larger;
+font-weight: 900;
+}
+
+.services-text2{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.loremborder{
+  border-radius: 50%;
+  background-color: rgba(104, 99, 104, 0.478);
+  height: 60px;
+  width: 60px;
+  padding-top: 1%;
+  margin: 0 auto;
+}
+
+.loremborder:hover{
+  background-color: purple;
+}
+
+.iconify{
+  padding: 15%;
+}
+
+.loremIcon{
+  /* background-color: purple; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10% 0% ;
+}
+
+
+
+
+
+  @media (min-width: 789px){
+    .section-two{
+      padding: 5%;
+      display: grid;
+      grid-template-columns:auto auto auto;
+      column-gap: 20px;
+      background-color: white;
+    }
+
+    .sub-section{
+      padding: 4%;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px;
+    }
+
+    .desktop-text{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        background-color: rgba(175, 155, 128, 0.151);
+      }
+
+      .telephone{
+        font-size: large;
+        padding: 5px 5%;
+        display: flex;
+        gap: 20px
+      }
+
+      .icons{
+        display: flex;
+        padding: 5px 5%;
+       gap: 20px;
+      }
+
+      .icons a{
+        color: black;
+      }
+
+      .icons > a:hover{
+        color: purple;
+      }
+
+    .topbar{
+    height: 70px;
+    }
+
+    .top-text{
+    display: none;
+    }
+
+    label{
+        padding: 1% 5%;
+        font-size: 40px;
+        font-weight: bold;
+        color: purple;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    li{
+        margin: 0;
+       
+        list-style-type:none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: purple;
+        cursor: pointer;
+    }
+
+    li>a:hover{
+        color: rgba(128, 0, 128, 0.443);
+    }
+
+    .navlist{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding: 0% 2%;
+        margin: 2% 0% 3% 0;
+    }
+
+    swiper-container {
+        width: 70%;
+        height: 100%;
+      }
+
+      swiper-slide > p{
+        font-size: 40px;
+      }
+
+      #about-us > p{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        
+      }
+
+      .about-section{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 3%;
+      }
+
+      img{
+        /* width: 100%; */
+        flex: 1;
+        height: 100%;
+      }
+
+      .abt-text{
+        flex: 1;
+        font-size: larger;
+      }
+
+      .sub-about{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 5%;
+      }
+
+      .loremGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+      }
+
+      .loremIcon{
+    
+      }
+  }
+
+ 
 

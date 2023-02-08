@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/index.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          screen: {
-            large: "789px",
-            larger: "1039px",
-          },
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              dark: "rgba(0,0,0,.1)",
-            },
-          },
-        },
-      };
-    </script> -->
+    <link rel="stylesheet" href="/index.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="top-text">
-        <div><iconify-icon icon="uiw:mail" style="color: purple;"></iconify-icon> <span>info@example.com</span></div>
-        <div><iconify-icon icon="bi:telephone-fill" style="color: purple;"></iconify-icon> <span>+234 0000 0000</span></div>
+      <div>
+        <iconify-icon icon="uiw:mail" style="color: purple"></iconify-icon>
+        <span>info@example.com</span>
+      </div>
+      <div>
+        <iconify-icon
+          icon="bi:telephone-fill"
+          style="color: purple"
+        ></iconify-icon>
+        <span>+234 0000 0000</span>
+      </div>
+    </div>
+
+    <div class="desktop-text">
+      <div class="telephone">
+        <div>
+          <iconify-icon icon="uiw:mail" style="color: purple"></iconify-icon>
+          <span>info@example.com</span>
+        </div>
+        <div>
+          <iconify-icon
+            icon="bi:telephone-fill"
+            style="color: purple"
+          ></iconify-icon>
+          <span>+234 0000 0000</span>
+        </div>
+      </div>
+      <div class="icons">
+        <a href="/"
+          ><iconify-icon icon="prime:twitter" width="30"></iconify-icon
+        ></a>
+        <a href="/"
+          ><iconify-icon icon="ic:twotone-facebook" width="30"></iconify-icon
+        ></a>
+        <a href="/"
+          ><iconify-icon
+            icon="ph:instagram-logo-light"
+            width="30"
+          ></iconify-icon
+        ></a>
+        <a href=""
+          ><iconify-icon icon="carbon:logo-linkedin" width="30"></iconify-icon
+        ></a>
+      </div>
     </div>
 
     <!-- nav bar -->
-    <nav class="navbar">
+    <div class="topbar">
+      <nav class="navbar">
         <label for="logo">PURPLE</label>
-        <iconify-icon class="hamburger" icon="system-uicons:menu-hamburger" style="color: rgb(7, 6, 7);" width="40"></iconify-icon>
-    </nav>
-    <ul class="">
+        <ul class="navlist">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Drop Down</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <iconify-icon
+          class="hamburger"
+          icon="system-uicons:menu-hamburger"
+          style="color: rgb(7, 6, 7)"
+          width="40"
+        ></iconify-icon>
+      </nav>
+      <ul class="ul-list">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Services</a></li>
@@ -44,28 +85,357 @@
         <li><a href="">Team</a></li>
         <li><a href="">Drop Down</a></li>
         <li><a href="">Contact</a></li>
-    </ul>
+      </ul>
+    </div>
     <!-- nav bar -->
 
-<!-- hero section -->
-<div class="hero">
-<div class="overlay">
-    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-  </swiper-container>
+    <!-- hero section -->
+    <div class="hero">
+      <div class="overlay">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide>
+            <p>WELCOME TO PURPLE</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, eius? Ullam expedita, velit necessitatibus officia
+            neque pariatur harum accusamus sit. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Placeat, suscipit.
+          </swiper-slide>
+          <swiper-slide>
+            <p>LOREM IPSUM DOLOR.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            placeat eaque quis odio et ab iste beatae repudiandae nesciunt
+            nostrum facere perferendis, inventore illo, fugit adipisci quisquam.
+            Praesentium, dolorum voluptatem.</swiper-slide
+          >
+          <swiper-slide>
+            <p>LOREM IPSUM DOLOR.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam alias
+            incidunt minus autem nam hic et quis dolorum vel, eius similique
+            pariatur magni accusantium tempore iure, neque laudantium corrupti
+            culpa. Lorem ipsum dolor sit amet.</swiper-slide
+          >
+          <swiper-slide>
+            <p>LOREM IPSUM DOLOR.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            cumque rerum et odit hic quia ipsum perferendis velit blanditiis,
+            iste assumenda reiciendis sequi labore sapiente enim consectetur
+            ipsa nihil nemo.</swiper-slide
+          >
+        </swiper-container>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-</div>
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      </div>
+    </div>
+    <!-- hero section  -->
 
+    <div class="section-two">
+      <div class="sub-section">
+        <iconify-icon
+          icon="bi:laptop"
+          style="color: purple"
+          width="40"
+        ></iconify-icon>
+        <p>LOREM IPSUM</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque
+        odio in natus placeat at ratione illo harum velit modi. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Cumque, quas?
+      </div>
 
+      <div class="sub-section">
+        <iconify-icon
+          icon="ps:suitcase"
+          style="color: purple"
+          width="40"
+        ></iconify-icon>
+        <p>LOREM IPSUM</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque
+        odio in natus placeat at ratione illo harum velit modi. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Cumque, quas?
+      </div>
 
+      <div class="sub-section">
+        <iconify-icon
+          icon="simple-line-icons:calender"
+          style="color: purple"
+          width="40"
+        ></iconify-icon>
+        <p>LOREM IPSUM</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque
+        odio in natus placeat at ratione illo harum velit modi. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Cumque, quas?
+      </div>
+    </div>
 
+    <br />
+
+    <!-- ABOUT US -->
+    <div id="about-us">
+      <div class="about-text">ABOUT US</div>
+      <hr class="hrOne" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum
+        voluptas similique aperiam ullam sequi rem veniam exercitationem
+        consequatur est. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Fugit beatae ipsum et debitis voluptate magni dolore quae modi ea
+        enim.
+      </p>
+      <br />
+
+      <div class="about-section">
+        <img src="/images/jason-goodman-Oalh2MojUuk-unsplash.jpg" alt="" />
+        <div class="abt-text">
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <p>
+            Vivamus feugiat lorem risus, sed faucibus neque finibus a. Fusce non
+            congue nisi. Maecenas dui lectus, aliquet mollis est vitae, iaculis
+            varius purus.
+          </p>
+          <p>
+            Mauris ut ex viverra tortor placerat pulvinar. Duis malesuada semper
+            ante, eu rhoncus neque pulvinar in. Nullam porttitor dictum commodo.
+          </p>
+          <p>
+            Aliquam ut massa nec neque convallis sagittis ac ac mauris. Sed quis
+            eros elit. Sed lobortis nunc ut quam sodales convallis. Pellentesque
+            urna ante, feugiat in eleifend non, dictum sit amet nisl. Praesent
+            sed accumsan tortor. Nunc sit amet nisl dui. Sed dictum dignissim
+            urna vitae cursus.
+          </p>
+          <p>
+            Aliquam ut massa nec neque convallis sagittis ac ac mauris. Sed quis
+            eros elit. Sed lobortis nunc ut quam sodales convallis.
+          </p>
+        </div>
+      </div>
+
+      <div class="sub-about">
+        <div class="about-two">
+          <p class="num">01</p>
+          <p class="heading">Lorem Ipsum</p>
+          <p>
+            Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+            consectetur ducimus vero placeat
+          </p>
+        </div>
+        <hr class="hrTwo" />
+        <div class="about-two">
+          <p class="num">02</p>
+          <p class="heading">Repellat Nihil</p>
+          <p>
+            Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis
+            dolor quod et vel dire leno para dest
+          </p>
+        </div>
+        <hr class="hrTwo" />
+        <div class="about-two">
+          <p class="num">03</p>
+          <p class="heading">Ad ad velit qui</p>
+          <p>
+            Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt
+            debitis quo vel nam quis
+          </p>
+        </div>
+        <hr class="hrTwo" />
+        <div class="about-two">
+          <p class="num">04</p>
+          <p class="heading">Repellendus molestiae</p>
+          <p>
+            Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod
+            soluta quod nam mider lando casa
+          </p>
+        </div>
+        <hr class="hrTwo" />
+        <div class="about-two">
+          <p class="num">05</p>
+          <p class="heading">Sapiente Magnam</p>
+          <p>
+            Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui
+            possimus est repellendus est quibusdam
+          </p>
+        </div>
+        <hr class="hrTwo" />
+        <div class="about-two">
+          <p class="num">06</p>
+          <p class="heading">Facilis Impedit</p>
+          <p>
+            Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut
+            nostrum repudiandae voluptatibus corporis sequi
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="clients">
+      <div class="client-text">
+        OUR CLIENTS
+        <hr class="hrOne" />
+      </div>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+      <br />
+
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide>
+          <img src="/images/words.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/images/words.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/images/words.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/images/words.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/images/words.png" alt="" />
+        </swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    </div>
+
+    <div class="services">
+      <div class="client-text">
+        SERVICES
+        <hr class="hrOne" />
+      </div>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+      <br />
+
+      <div class="loremGrid">
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              class="iconify"
+              icon="iconoir:basketball"
+              style="color: white"
+              width="40"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">LOREM IPSUM</p>
+          <p class="services-text2">
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi
+          </p>
+        </div>
+        <br />
+
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              icon="ph:note-thin"
+              style="color: white"
+              width="40"
+              height="60"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">SED PERSPICIATIS</p>
+          <p class="services-text2">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore
+          </p>
+        </div>
+        <br />
+
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              icon="mdi:speedometer"
+              style="color: white"
+              width="40"
+              height="60"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">LOREM IPSUM</p>
+          <p class="services-text2">
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi
+          </p>
+        </div>
+        <br />
+
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              icon="ant-design:database-filled"
+              style="color: white"
+              width="40"
+              height="60"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">NEMO ENIM</p>
+          <p class="services-text2">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis
+          </p>
+        </div>
+        <br />
+
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              icon="heroicons:tv"
+              style="color: white"
+              width="40"
+              height="60"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">DELE CARDO</p>
+          <p class="services-text2">
+            Quis consequatur saepe eligendi voluptatem consequatur dolor
+            consequuntur
+          </p>
+        </div>
+        <br />
+
+        <div class="loremIcon">
+          <div class="loremborder">
+            <iconify-icon
+              icon="mdi:paris"
+              style="color: white"
+              width="40"
+              height="60"
+            ></iconify-icon>
+          </div>
+          <p class="services-text">DIVERA DON</p>
+          <p class="services-text2">
+            Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit
+            aspernatur
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="/index.js"></script>
-</body>
+  </body>
 </html>
