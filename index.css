@@ -244,7 +244,7 @@ border-radius: 5px;
 
 #portfolio{
   text-align: center;
-  padding: 10px 5px;
+  padding: 20px 5px;
 }
 
 #portfolio > div {
@@ -395,9 +395,54 @@ text-align: center;
 row-gap: 15px;
 }
 
+.image-button{
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+
+.image-button > button{
+  border: none;
+  background-color: white;
+  padding: 0.5%;
+  border-radius: 10px;
+}
+
+.image-button > button:hover{
+  background-color: purple;
+  color: white;
+}
+
+.unblock{
+  display: block;
+}
+
+.dropMenuTwo{
+  /* display: flex; */
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.558) 0px 3px 8px;
+        width: 100px;
+        padding: 10% 10%;
+        display:none;
+}
+
+.dropMenuTwo > a{
+  color: rgb(4, 4, 4);
+}
+
+#drop-two{
+  color: white;
+}
+
+
+
+
 /* ======================================================================== */
 
-/* TABLET SCREEN */
+
+
+/* TABLET & IPAD SCREEN */
 @media(min-width: 768px){
   .section-two{
     padding: 5%;
@@ -427,6 +472,13 @@ row-gap: 15px;
   .teamcontainer{
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+
+  .image-select{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto; */
+    gap: 10px;
   }
 }
 
@@ -549,12 +601,10 @@ row-gap: 15px;
 
       img{
         width: 50%;
-        /* flex: 1; */
         height: 100%;
       }
 
       .abt-text{
-        /* flex: 1; */
         font-size: larger;
       }
 
@@ -597,6 +647,57 @@ row-gap: 15px;
         display: grid;
         grid-template-columns: auto auto auto;
       }
+
+      .image-button{
+        padding-bottom: 0px;
+      }
+      
+      .image-button > button{
+        font-size: 20px;
+      }
+
+      .image-select{
+        display: grid;
+        grid-template-columns: auto auto auto;
+       padding: 5%;
+       
+      }
+      .image-select > img{
+        margin: 0 auto;
+        width: 100%;
+      }
+      .image-select > img:hover{
+        box-shadow: rgba(0, 0, 0, 0.941) 0px 22px 70px 4px;
+        
+      }
+
+      .dropMenu{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.558) 0px 3px 8px;
+        width: 100px;
+        padding: 10% 10%;
+        display:none;
+      }
+
+      .dropMenu > a{
+        padding-top: 5%;
+      }
+
+      .dropMenu > hr{
+        width: 100%;
+      }
+
+      .reveal{
+        display: block;
+      }
+
+      #drop-one{
+        color: purple;
+      }
+
+  
   }
 
  
