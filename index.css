@@ -1,3 +1,4 @@
+/* MOBILE SCREEN */
 body{
     margin: 0;
 }
@@ -172,22 +173,24 @@ swiper-container {
 
 }
 
-.services{
+#services{
   background-color: rgba(128, 0, 128, 0.058);
   text-align: center;
- /* padding-bottom: 10%; */
+ padding-bottom: 10%;
+ padding-top: 10%;
+ margin-bottom: 30px;
 }
 
-.services >p{
+#services >p{
   margin: 0 3%;
 }
 
-.services-text{
+#services-text{
 font-size: larger;
 font-weight: 900;
 }
 
-.services-text2{
+#services-text2{
   width: 90%;
   margin: 0 auto;
 }
@@ -210,7 +213,6 @@ font-weight: 900;
 }
 
 .loremIcon{
-  /* background-color: purple; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 95%;
   margin: 0 auto;
@@ -218,11 +220,225 @@ font-weight: 900;
   padding: 10% 0% ;
 }
 
+.call-to-action{
+  background-color: purple;
+  text-align: center;
+  padding: 50px 10px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.callsAction{
+  font-size:x-large;
+  font-weight: 900;
+}
+
+.call-to-action > .calls>  a >  button{
+background-color: rgba(255, 255, 255, 0.006);
+padding: 10px;
+width: 50%;
+color: white;
+border: 1px solid white;
+border-radius: 5px;
+}
+
+#portfolio{
+  text-align: center;
+  padding: 10px 5px;
+}
+
+#portfolio > div {
+  font-size:x-large;
+  font-weight: 900;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+footer > div{
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.footer-icon{
+display: flex;
+gap: 5px;
+justify-content: center;
+}
+
+.footer-icon > div{
+  background-color: purple;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span{
+  color: purple;
+}
+
+#contact{
+  text-align: center;
+  margin: 30px 5px;
+}
+
+.contact-div{
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.info{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  gap: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.mailing{
+  display: flex;
+  gap: 5px;
+}
+
+.phone{
+  display: flex;
+  gap: 5px;
+}
+
+.hrtwo{
+  width: 95%;
+  border: solid 1px rgba(128, 0, 128, 0.683);
+}
+
+.form{
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  height: 35px;
+  padding: 1%;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.form-button{
+  height: 40px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: purple;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+#team{
+text-align: center;
+  padding: 20px 5px;
+  text-align: center;
+  background-color: rgba(128, 0, 128, 0.058);
+}
+
+.teamcontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.teamDiv{
+  
+  padding: 5%;
+  margin: 0 auto;
+  width: 85%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 8px;
+}
+
+#team > .teamTitle{
+  font-size:x-large;
+  font-weight: 900;
+}
+
+.image{
+  background-color: rgba(141, 138, 109, 0.212);
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+#team > div > .teamDiv > p{
+  font-size:large;
+  font-weight: 700;
+}
+
+#team > div > .teamDiv > .ceo{
+  font-weight: 700;
+}
+
+.loremGrid{
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+row-gap: 15px;
+}
+
+/* ======================================================================== */
+
+/* TABLET SCREEN */
+@media(min-width: 768px){
+  .section-two{
+    padding: 5%;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    column-gap: 20px;
+    background-color: white;
+  }
+
+  img{
+    width: 93%;
+    /* flex: 1; */
+    height: 100%;
+  }
+
+  .sub-about{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .loremGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+row-gap: 15px;
+  }
+
+  .teamcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
 
 
+/* ======================================================================== */
 
+/* DESKTOP SCREEN */
+  @media (min-width: 1024px){
+    .about-us{
 
-  @media (min-width: 789px){
+    }
+
     .section-two{
       padding: 5%;
       display: grid;
@@ -326,18 +542,19 @@ font-weight: 900;
 
       .about-section{
         display: flex;
+        flex: 1;
         flex-direction: row-reverse;
         margin-top: 3%;
       }
 
       img{
-        /* width: 100%; */
-        flex: 1;
+        width: 50%;
+        /* flex: 1; */
         height: 100%;
       }
 
       .abt-text{
-        flex: 1;
+        /* flex: 1; */
         font-size: larger;
       }
 
@@ -352,11 +569,33 @@ font-weight: 900;
       .loremGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
+    row-gap: 15px;
       }
 
-      .loremIcon{
-    
+  .call-to-action{
+    padding: 60px;
+  }
+      .calls{
+        display: flex;
+        gap: 30px;
+      }
+
+      .call-to-action >.calls >a > button{
+        width: 150px;
+      }
+
+      #contact{
+        width: 50%;
+        margin: 5% auto;
+      }
+
+      #team{
+        margin: 5% auto;
+      }
+        
+      .teamcontainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
       }
   }
 
