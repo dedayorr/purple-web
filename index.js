@@ -13,16 +13,13 @@ hamburger.addEventListener("click", () => {
   navlist.classList.toggle("show");
 });
 
-dropOne.addEventListener("mouseover",()=>{
-    dropMenu.classList.toggle("reveal")
-})
+dropOne.addEventListener("mouseover", () => {
+  dropMenu.classList.toggle("reveal");
+});
 
-dropTwo.addEventListener("click",()=>{
-    dropMenuTwo.classList.toggle("unblock")
-    
-})
-
-
+dropTwo.addEventListener("click", () => {
+  dropMenuTwo.classList.toggle("unblock");
+});
 
 const galleries = [
   {
@@ -51,67 +48,77 @@ const galleries = [
   },
 ];
 
-let gallery = "";
-for (let images of galleries) {
-  gallery += `
-    <img src="${images.img}" alt="">
-          `;
-}
-document.getElementsByClassName("image-select")[0].innerHTML = gallery;
+let gallery = galleries;
+let galleryBox = document.getElementsByClassName("image-select")[0];
+galleryBox.innerHTML = ``;
+gallery.forEach((element) => {
+  const img = document.createElement("img");
+  img.src = element.img;
+  img.alt = element.category;
 
-
-const filteredFlower = galleries.filter(
-  (gallery) => gallery.category === "flower"
-);
-
-const filteredPlanet = galleries.filter(
-  (gallery) => gallery.category === "planet"
-);
-
-const filteredAnimal = galleries.filter(
-  (gallery) => gallery.category === "animal"
-);
-
-// ALL IMAGES
-all.addEventListener("click", ()=>{
-    for (let images of galleries) {
-        gallery += `
-          <img src="${images.img}" alt="">
-                `;
-      }
-      document.getElementsByClassName("image-select")[0].innerHTML = gallery;
-})
+  galleryBox.appendChild(img);
+});
+// ALL ANIMAL
+all.addEventListener("click", (e) => {
+  gallery = galleries;
+  galleryBox.innerHTML = ``;
+  gallery.forEach((element) => {
+    const img = document.createElement("img");
+    img.src = element.img;
+    img.alt = element.category;
+    console.log(gallery, "gallerrys");
+    galleryBox.appendChild(img);
+  });
+});
 
 // FILTERED ANIMAL
 animal.addEventListener("click", (e) => {
-  let gallery = "";
-  for (let images of filteredAnimal) {
-    console.log(images);
-    gallery += `
-    <img src="${images.img}" alt="">
-          `;
-  }
-  document.getElementsByClassName("image-select")[0].innerHTML = gallery;
+  const filteredAnimal = galleries.filter(
+    (gallery) => gallery.category === "animal"
+  );
+  gallery = filteredAnimal;
+
+  galleryBox.innerHTML = ``;
+  gallery.forEach((element) => {
+    const img = document.createElement("img");
+    img.src = element.img;
+    img.alt = element.category;
+    console.log(gallery, "gallerrys");
+
+    galleryBox.appendChild(img);
+  });
 });
 
 // FILTERED FLOWER
 flower.addEventListener("click", (e) => {
-  let gallery = "";
-  for (let images of filteredFlower) {
-    gallery += `
-    <img src="${images.img}" alt="">
-          `;
-  }
-  document.getElementsByClassName("image-select")[0].innerHTML = gallery;
+  const filteredFlower = galleries.filter(
+    (gallery) => gallery.category === "flower"
+  );
+  gallery = filteredFlower;
+
+  galleryBox.innerHTML = ``;
+  gallery.forEach((element) => {
+    const img = document.createElement("img");
+    img.src = element.img;
+    img.alt = element.category;
+
+    galleryBox.appendChild(img);
+  });
 });
 
 // FILTERED PLANET
 planet.addEventListener("click", (e) => {
-  let gallery = "";
-  for (let images of filteredPlanet) {
-    gallery += `
-        <img src="${images.img}" alt="">
-              `;
-  }
-  document.getElementsByClassName("image-select")[0].innerHTML = gallery;
+  const filteredPlanet = galleries.filter(
+    (gallery) => gallery.category === "planet"
+  );
+  gallery = filteredPlanet;
+
+  galleryBox.innerHTML = ``;
+  gallery.forEach((element) => {
+    const img = document.createElement("img");
+    img.src = element.img;
+    img.alt = element.category;
+
+    galleryBox.appendChild(img);
+  });
 });
