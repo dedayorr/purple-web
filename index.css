@@ -17,7 +17,9 @@ body{
 }
 
 .topbar{
-    /* position: sticky 0; */
+    position: sticky ;
+    top: 0;
+    background: #fff;
 }
 
 label{
